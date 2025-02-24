@@ -2,7 +2,6 @@
 .thumbs.db
 node_modules
 .vscode
-/.vscode
 
 # Quasar core related directories
 .quasar
@@ -10,27 +9,17 @@ node_modules
 /quasar.config.*.temporary.compiled*
 quasar.config.js
 
-# Cordova related directories and files
-/src-cordova/node_modules
-/src-cordova/platforms
-/src-cordova/plugins
-/src-cordova/www
-
-# Capacitor related directories and files
-/src-capacitor/www
-/src-capacitor/node_modules
-
 # Log files
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Editor directories and files
-.idea
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
 
 # local .env files
 .env.local*
+
+package-lock.json
+yarn.lock
+eslint.config.js
+postcss.config.js
+quasar.config.js
