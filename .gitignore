@@ -8,7 +8,7 @@ node_modules
 .quasar
 /dist
 /quasar.config.*.temporary.compiled*
-.quasar.config.js
+quasar.config.js
 
 # Cordova related directories and files
 /src-cordova/node_modules
