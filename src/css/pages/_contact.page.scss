@@ -1,16 +1,47 @@
+.contact-form-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.747)),
+    url(/src/assets/contact-form.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  margin-top: 30px;
+  padding-bottom: 200px;
+}
+
 .title-contacts {
   font-size: 2rem;
   margin-bottom: 1rem;
-  padding-top: 20px;
+  padding-top: 200px;
+  color: $secondary;
 }
 
 .contact-form {
-  align-items: center;
-  padding-top: 40px;
   margin-left: 40px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   padding: 20px;
+  color: $secondary;
+  width: 100%;
+}
+
+.contact-form .q-input {
+  margin: 10px;
+}
+
+.contact-form .q-textarea {
+  margin: 10px;
+}
+
+.contact-form .q-btn {
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 20%;
+}
+
+.contact-form-icons {
+  color: $secondary;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  align-items: center;
 }

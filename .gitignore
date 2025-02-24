@@ -19,7 +19,6 @@ yarn-error.log*
 .env.local*
 
 package-lock.json
-yarn.lock
 eslint.config.js
 postcss.config.js
 quasar.config.js
