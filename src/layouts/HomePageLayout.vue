@@ -1,20 +1,24 @@
 <template>
-  <q-layout view="lHh Lpr lff">
+  <q-layout view="lHh Lpr lff" @scroll="scrollHandler">
     <q-page-container style="padding-bottom: 100px">
       <router-view />
+      <transition
+        appear
+        enter-active-class="animated fadeInLeft"
+        leave-active-class="animated fadeOutRight"
+      >
+        <!-- <q-header> -->
+        <q-toolbar class="sticky-nav-links" v-if="enableNavigation">
+          <q-btn dense flat no-wrap no-caps label="Home" @click="router.push('/')" />
+          <q-btn dense flat no-wrap no-caps label="Projects" @click="router.push('/projects')" />
+          <q-btn dense flat no-wrap no-caps label="About Us" @click="router.push('/about')" />
+          <q-btn dense flat no-wrap no-caps label="Contact Us" @click="router.push('/contact')" />
+          <q-space />
 
-      <!-- <q-header> -->
-      <q-toolbar class="sticky-nav-links">
-        <!-- background -->
-
-        <q-btn dense flat no-wrap no-caps label="Home" @click="router.push('/')" />
-        <q-btn dense flat no-wrap no-caps label="Projects" @click="router.push('/projects')" />
-        <q-btn dense flat no-wrap no-caps label="About Us" @click="router.push('/about')" />
-        <q-btn dense flat no-wrap no-caps label="Contact Us" @click="router.push('/contact')" />
-        <q-space />
-
-        <q-img class="sticky-logo" width="100px" src="./../assets/logo.png"></q-img>
-      </q-toolbar>
+          <q-img class="sticky-logo" src="./../assets/logo.png"></q-img>
+        </q-toolbar>
+        <!-- </q-header> -->
+      </transition>
     </q-page-container>
     <q-footer class="bg-secondary">
       <div class="footer-container">
@@ -51,6 +55,16 @@
 </template>
 
 <script setup>
+import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 const router = useRouter()
+const enableNavigation = ref(false)
+
+const scrollHandler = (e) => {
+  if (e.position > 500) {
+    enableNavigation.value = true
+  } else {
+    enableNavigation.value = false
+  }
+}
 </script>

@@ -1,0 +1,50 @@
+.carousel {
+  margin-bottom: 50px;
+  height: 800px;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+  border-width: 190px;
+}
+
+.carousel-image {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.carousel-text {
+  font-size: 24px;
+  color: $secondary;
+}
+
+.carousel-text-title {
+  font-size: 36px;
+  color: $secondary;
+  font-weight: 500;
+  padding-top: 300px;
+}
+
+.title {
+  font-size: 38px;
+  color: $primary;
+  font-weight: 500;
+  padding-top: 300px;
+}
+
+.service-card {
+  margin: 20px;
+  border-radius: 20px;
+  border: 6px solid $primary;
+  padding: 20px;
+}
+
+.service-card-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: $primary;
+}
+
+.service-card-description {
+  font-size: 14px;
+  font-weight: 300;
+  color: $primary;
+}

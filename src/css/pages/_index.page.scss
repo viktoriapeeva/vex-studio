@@ -1,0 +1,192 @@
+.page-container {
+  background-color: $secondary;
+  width: 100%;
+  height: 100%;
+}
+
+.bg-image {
+  background-image: url('assets/background.png');
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  padding-top: 20px;
+  display: flex;
+  height: 800px;
+  justify-content: space-evenly;
+}
+
+.navbar .q-btn {
+  background-color: $primary;
+  color: $secondary;
+  margin: 10px;
+  width: 230px;
+  height: 46px;
+  font-size: 24px;
+  line-height: 0;
+}
+
+.nav-links {
+  padding-left: 100px;
+  display: flex;
+}
+
+.logo {
+  padding-bottom: 10px;
+}
+
+.page-content-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding-top: 400px;
+}
+
+.page-content {
+  padding: 20px;
+  padding-top: 100px;
+  height: 100%;
+}
+
+.sticky-logo {
+  margin-bottom: 10px;
+  margin-right: 50px;
+  width: 100px;
+}
+
+.sticky-nav-links {
+  position: fixed;
+  top: 0;
+  background-image: url('assets/wave-flipped.png');
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 170px;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.sticky-nav-links .q-btn {
+  background-color: $primary;
+  color: $secondary;
+  margin: 10px;
+  width: 230px;
+  height: 46px;
+  font-size: 24px;
+  line-height: 0;
+}
+
+.about-us-image {
+  margin-left: 60px;
+  margin-bottom: 20px;
+}
+
+.about-us-textbox {
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  width: 70%;
+  margin-left: 40px;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.send-message {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('assets/send-message.png');
+  background-repeat: no-repeat;
+  height: 400px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.send-message-form {
+  align-items: center;
+  padding-top: 40px;
+  margin-left: 40px;
+}
+
+.send-message-form .q-btn {
+  margin-left: 20px;
+}
+
+.send-message-form h5 {
+  color: $secondary;
+}
+
+.send-message-form .q-input {
+  width: 70%;
+  margin: 10px;
+  // background-color: $secondary;
+  // // change opacity:
+  opacity: 0.8;
+  // border-radius: 30px;
+}
+
+.send-message-form .q-textarea {
+  width: 70%;
+  margin: 10px;
+  opacity: 0.8;
+}
+
+.send-message-icons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-left: 70px;
+  color: $secondary;
+}
+
+.services {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
+.service-image {
+  margin-bottom: 20px;
+  border-radius: 40px;
+  width: 700px;
+  height: 370px;
+}
+
+.service-image div {
+  color: $secondary;
+  font-weight: 300;
+  font-size: 26px;
+}
+
+.footer-container {
+  background-image: url('assets/wave.png');
+  background-repeat: no-repeat;
+  height: 300px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.footer-content {
+  color: $primary;
+  width: 100%;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.footer-links li {
+  list-style-type: none;
+  margin: 10px;
+}
+
+.footer-links a {
+  color: $primary;
+  margin: 10px;
+  text-decoration: none;
+}
+
+// .header-container {
+//   background-image: url('assets/wave-flipped.png');
+//   background-repeat: no-repeat;
+// }
