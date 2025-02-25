@@ -1,5 +1,9 @@
 <template>
-  <transition appear enter="fadeInRight" leave="fadeOutLeft">
+  <transition
+    appear
+    enter-active-class="animated fadeInLeft"
+    leave-active-class="animated fadeOutRight"
+  >
     <router-view />
   </transition>
 </template>
