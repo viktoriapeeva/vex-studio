@@ -175,18 +175,6 @@
   align-items: flex-end;
 }
 
-.footer-links li {
-  list-style-type: none;
-  margin: 10px;
+.footer-links {
+  margin: 5px;
 }
-
-.footer-links a {
-  color: $primary;
-  margin: 10px;
-  text-decoration: none;
-}
-
-// .header-container {
-//   background-image: url('assets/wave-flipped.png');
-//   background-repeat: no-repeat;
-// }

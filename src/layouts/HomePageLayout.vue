@@ -17,44 +17,14 @@
 
           <q-img class="sticky-logo" src="./../assets/logo.png"></q-img>
         </q-toolbar>
-        <!-- </q-header> -->
       </transition>
     </q-page-container>
-    <q-footer class="bg-secondary">
-      <div class="footer-container">
-        <div class="footer-content row">
-          <div class="col-3 text-center">
-            <q-img class="q-mt-lg" width="120px" src="./../assets/logo-white.png"></q-img>
-          </div>
-          <div class="col-3">
-            <ul class="footer-links">
-              <li><a href="/">Home</a></li>
-              <li><a href="/projects">Projects</a></li>
-              <li><a href="/about-us">About Us</a></li>
-              <li><a href="/contact-us">Contact Us</a></li>
-            </ul>
-          </div>
-          <div class="col-3">
-            <ul class="footer-links">
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms & Conditions</a></li>
-              <li><a href="#">FAQs</a></li>
-            </ul>
-          </div>
-          <div class="col-3 text-center">
-            <!-- socials -->
-            <q-btn flat round dense icon="mdi-facebook" />
-            <q-btn flat round dense icon="mdi-twitter" />
-            <q-btn flat round dense icon="mdi-instagram" />
-            <q-btn flat round dense icon="mdi-linkedin" />
-          </div>
-        </div>
-      </div>
-    </q-footer>
+    <AppFooter />
   </q-layout>
 </template>
 
 <script setup>
+import AppFooter from 'src/components/AppFooter.vue'
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 const router = useRouter()
