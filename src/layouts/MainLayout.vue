@@ -1,12 +1,13 @@
 <template>
   <q-layout view="lHh Lpr lff">
     <q-page-container style="padding-bottom: 100px">
-      <transition
+      <!-- <transition
+        appear
         enter-active-class="animated fadeInLeft"
         leave-active-class="animated fadeOutRight"
-      >
-        <router-view />
-      </transition>
+      > -->
+      <router-view />
+      <!-- </transition> -->
       <q-toolbar class="sticky-nav-links">
         <q-btn dense flat no-wrap no-caps label="Home" to="/" />
         <q-btn dense flat no-wrap no-caps label="Projects" to="/projects" />

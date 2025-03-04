@@ -1,18 +1,18 @@
 <template>
   <q-layout view="lHh Lpr lff" @scroll="scrollHandler">
     <q-page-container style="padding-bottom: 100px">
-      <transition
+      <!-- <transition
+        appear
         enter-active-class="animated fadeInLeft"
         leave-active-class="animated fadeOutRight"
-      >
-        <router-view />
-      </transition>
+      > -->
+      <router-view />
+      <!-- </transition> -->
       <transition
         appear
         enter-active-class="animated fadeInLeft"
         leave-active-class="animated fadeOutRight"
       >
-        <!-- <q-header> -->
         <q-toolbar class="sticky-nav-links" v-if="enableNavigation">
           <q-btn dense flat no-wrap no-caps label="Home" to="/" />
           <q-btn dense flat no-wrap no-caps label="Projects" to="/projects" />
